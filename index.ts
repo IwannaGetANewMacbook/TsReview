@@ -39,6 +39,8 @@ function forNarrowing(x: string | number) {
   let output: number
   if (typeof(x) === "number") {
     output = x + 1
+  } else{
+    return
   }
   return output  
 }

@@ -1,3 +1,4 @@
+"use strict";
 let name1 = "su";
 let arr = [1, 2, 3, "kim", 2, "dwdwd"];
 let obj = { name: "suhyeon" };
@@ -27,6 +28,9 @@ function forNarrowing(x) {
     let output;
     if (typeof (x) === "number") {
         output = x + 1;
+    }
+    else {
+        return;
     }
     return output;
 }
