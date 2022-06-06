@@ -97,3 +97,21 @@ userx.getFullNme();
 userx.modifyValue("Lee");
 userx.getFullNme();
 // private 키워드는 class 안에서만 수정 변경 이용 가능!!!
+// class에서 사용가능한 protected, static 키워드
+// protected 키워드는 private과 다르게 상속받은 클래스에서
+// protected 선언된 변수나 함수를 사용할 수 있음.
+// private 키워드는 상속받은 클래스에서도 사용불가!!!
+// static 키워드 붙이면 부모class에 직접 부여됨!!!
+// static 붙은 변수나 함수는 자식이 물려받지 못함!!!
+class User1 {
+    x = 10;
+    y = 112;
+    cccc(a) {
+        console.log(a + this.y);
+    }
+    static z = 100;
+}
+class UserQ extends User1 {
+    y = 10000;
+}
+let user11 = new User1();
