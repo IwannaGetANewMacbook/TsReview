@@ -1,3 +1,6 @@
+// export {}를 이용해서 local file로 만들어버리기!
+export {}
+
 import { myAge1, myName1, Name } from "./a.js";
 
 

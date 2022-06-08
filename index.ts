@@ -1,3 +1,7 @@
+// export {}를 이용해서 local file로 만들어버리기!
+export {}
+
+
 let name1: string = "su"
 let arr: (string | number)[] = [1, 2, 3, "kim", 2, "dwdwd"]
 let obj: {name?: string} = {name: "suhyeon"}

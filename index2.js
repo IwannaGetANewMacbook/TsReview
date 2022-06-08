@@ -1,4 +1,3 @@
-"use strict";
 // 06.02
 function myfu(x) {
     if (typeof (x) === "number") {
@@ -66,7 +65,7 @@ if (link instanceof HTMLAnchorElement) {
 let button = document.querySelector("#button");
 if (button) {
     button.addEventListener("click", () => {
-        console.log("버튼눌름.");
+        console.log("push the button!");
     });
 }
 class LolCharactor {
@@ -107,6 +106,7 @@ let teacher = {
     age: 43
 };
 console.log(teacher);
+export {};
 // type 과 interface 차이점:
 // type은 중복선언 불가능
 // interface는 중복선언 가능!!

@@ -1,4 +1,8 @@
 // 06.02
+
+// export {}를 이용해서 local file로 만들어버리기!
+export{}
+
 function myfu(x: number | string): number {
   if (typeof(x) === "number") {
     return x + 1
@@ -115,7 +119,7 @@ if(link instanceof HTMLAnchorElement  ) {
 let button = document.querySelector("#button")
 if(button) {
   button.addEventListener("click", () => {
-    console.log("버튼눌름.")
+    console.log("push the button!")
   })
 }
 

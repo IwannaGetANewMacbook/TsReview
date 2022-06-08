@@ -1,5 +1,8 @@
 // part2 - 함수 rest 파라미터, destructuring 할 때 타입지정
 
+// export {}를 이용해서 local file로 만들어버리기!
+export {}
+
 function plus(a: number , b: number, ...c: number[]) {
   let output: number = 0
   c.forEach((v, i, a) => {

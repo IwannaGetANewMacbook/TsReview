@@ -2,6 +2,12 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "strict": true
+    "strict": true,
+    // declaration 옵션을 true로 바꾸면 ts파일마다 d.ts 파일 자동생성됨.
+    "declaration": false,
+
+    // 이 폴더 안에있는 타입은 글로벌하게 이용가능 하다는 뜻!
+    // 근데 이거 설정하면 좀 위험해서 안쓰는게 나음.
+    // "typeRoots": ["./types"]
   }
 }

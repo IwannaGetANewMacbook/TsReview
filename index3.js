@@ -1,4 +1,3 @@
-"use strict";
 // part2 - 함수 rest 파라미터, destructuring 할 때 타입지정
 function plus(a, b, ...c) {
     let output = 0;
@@ -115,3 +114,4 @@ class UserQ extends User1 {
     y = 10000;
 }
 let user11 = new User1();
+export {};

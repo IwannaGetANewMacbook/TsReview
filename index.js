@@ -1,4 +1,3 @@
-"use strict";
 let name1 = "su";
 let arr = [1, 2, 3, "kim", 2, "dwdwd"];
 let obj = { name: "suhyeon" };
@@ -35,3 +34,4 @@ function forNarrowing(x) {
     return output;
 }
 console.log(forNarrowing(1));
+export {};
