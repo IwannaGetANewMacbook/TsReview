@@ -1,6 +1,7 @@
 // d.ts 파일 임포트해서 타입가져다 쓰기.
 import {Age} from "./test.d"
 
+
 let age: Age = 26
 
 // 모든 타입을 정리해놓은 레퍼런스용으로 d.ts파일 쓰기.
@@ -73,10 +74,51 @@ let css: MyType = {
 
 // recursive하게 타입 만드는
 interface MyType {
-  "font-size": MyType | number
+  "font-size": {
+    "font-size": {
+      "font-size": number
+    }
+  }
 }
 
 
 
 // 14값 뽑기.
-// console.log(css["font-size"]["font-size"]["font-size"])
+console.log(css["font-size"]["font-size"]["font-size"])
+
+
+// (숙제1) 다음 자료의 타입을 지정해보십시오. 
+let obj: Obj = {
+  model : 'k5',
+  brand : 'kia',
+  price : 6000,
+  year : 2030,
+  date : '6월',
+  percent : '5%',
+  dealer : '김차장',
+}
+
+interface Obj {
+  [key: string] : string | number
+}
+
+console.log(obj)
+
+
+//(숙제2) 다음 object 자료의 타입을 interface 써서 만들어보십시오. 
+let obj2: Obj2 = {
+  'font-size' : 10,
+  'secondary' : {
+    'font-size' : 12,
+    'third' : {
+      'font-size' : 14
+    }
+  }
+}
+
+interface Obj2 {
+  'font-size': number
+  [key: string]: number | Obj2
+}
+
+console.log(obj2)

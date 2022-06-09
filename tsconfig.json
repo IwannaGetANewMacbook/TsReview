@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "strict": true,
+    "strict": false,
     // declaration 옵션을 true로 바꾸면 ts파일마다 d.ts 파일 자동생성됨.
     "declaration": false,
 
