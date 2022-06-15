@@ -10,3 +10,8 @@ let car = {
     model: "avanteCN7",
     price: 120000000
 };
+///////////////////////////////////////////////////
+4 > 3 ? console.log("true") : console.log("false");
+let a;
+console.log(a);
+// T에서 타입을 뽑아주세요
